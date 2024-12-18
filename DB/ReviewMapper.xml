@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.ReviewMapper">
+
+<!-- 	<insert id="insertReview"
+		parameterType="org.zerock.domain.ReviewVO" keyProperty="rno"
+		useGeneratedKeys="true">
+		INSERT INTO review (rno, vno, uno, title, content, regdate, updatedate)
+		VALUES (SEQ_REVIEW.NEXTVAL, #{vno}, #{uno}, #{title}, #{content},
+		SYSDATE, SYSDATE)
+	</insert> -->
+
+	 <!-- 리뷰 삽입 -->
+    <insert id="insertReview">
+        INSERT INTO review (rno, vno, uno, title, content, regdate, updatedate)
+        VALUES (SEQ_REVIEW.NEXTVAL, #{vno}, #{uno}, #{title}, #{content}, SYSDATE, SYSDATE)
+    </insert>
+    
+	<!-- 특정 리뷰 조회 -->
+	<select id="getReviewById" parameterType="long"
+		resultType="org.zerock.domain.ReviewVO">
+		SELECT *
+		FROM review
+		WHERE rno = #{rno}
+	</select>
+
+	<!-- 특정 휴대폰(vno)에 대한 리뷰 조회 -->
+	<select id="getReviewsByPhone" parameterType="long"
+		resultType="org.zerock.domain.ReviewVO">
+		SELECT
+		r.rno, r.vno, r.uno, r.title, r.content, r.regdate, r.updatedate,
+		u.name AS userName,
+		pr.phone_name AS phoneName
+		FROM
+		review r
+		JOIN
+		phoneadd p ON r.vno = p.vno
+		JOIN
+		phonepro pr ON p.cno = pr.cno
+		JOIN
+		users u ON r.uno = u.uno
+		WHERE
+		p.cno = #{cno}
+		ORDER BY
+		r.regdate DESC
+	</select>
+
+	<!-- 리뷰 + 사용자 이름 + 휴대폰 상세 정보 가져오기 -->
+	<select id="getReviewWithDetails"
+		resultType="org.zerock.domain.ReviewVO">
+		SELECT
+		r.rno, r.vno, r.uno, r.title, r.content, r.regdate, r.updatedate,
+		u.name AS userName,
+		p.phone_name AS phoneName, p.price, p.giga, p.color, p.manufacturer
+		FROM
+		review r
+		JOIN
+		users u ON r.uno = u.uno
+		JOIN
+		phonepro p ON r.vno = p.cno
+		ORDER BY
+		r.regdate DESC
+	</select>
+</mapper>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g data-name="사각형 352972" transform="translate(11 7)" style="stroke:#191919;fill:none;stroke-width:2px">
+        <rect width="39" height="46" rx="6" style="stroke:none"/>
+        <rect x="1" y="1" width="37" height="44" rx="5" style="fill:none"/>
+    </g>
+    <g data-name="교차 1" style="fill:none">
+        <path d="M12956 13590.841v-34a4.244 4.244 0 1 1 8 0v34a4.244 4.244 0 1 1-8 0z" style="stroke:none" transform="translate(-12945 -13543.843)"/>
+        <path d="M12960 13594.309a4.012 4.012 0 0 0 2.001-3.468v-33.997c0-1.445-.78-2.76-2.001-3.467a4.013 4.013 0 0 0-2.001 3.467v33.997c0 1.445.78 2.762 2.001 3.468m0 2.193a6.006 6.006 0 0 1-4.001-5.661v-33.997a6.008 6.008 0 0 1 4.001-5.66 6.008 6.008 0 0 1 4.001 5.66v33.997a6.006 6.006 0 0 1-4.001 5.661z" style="fill:#191919;stroke:none" transform="translate(-12945 -13543.843)"/>
+    </g>
+    <g data-name="패스 871427" style="fill:none">
+        <path d="M1 0h4a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z" style="stroke:none" transform="translate(9 17)"/>
+        <path d="M1 0h4a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z" style="fill:#191919;stroke:none" transform="translate(9 17)"/>
+    </g>
+    <g data-name="사각형 352967" transform="translate(9 23)" style="stroke:#191919;fill:none">
+        <rect width="6" height="2" rx="1" style="stroke:none"/>
+        <rect x=".5" y=".5" width="5" height="1" rx=".5" style="fill:none"/>
+    </g>
+    <g data-name="사각형 352968" transform="translate(9 29)" style="stroke:#191919;fill:none">
+        <rect width="6" height="2" rx="1" style="stroke:none"/>
+        <rect x=".5" y=".5" width="5" height="1" rx=".5" style="fill:none"/>
+    </g>
+    <g data-name="사각형 352969" transform="translate(9 35)" style="stroke:#191919;fill:none">
+        <rect width="6" height="2" rx="1" style="stroke:none"/>
+        <rect x=".5" y=".5" width="5" height="1" rx=".5" style="fill:none"/>
+    </g>
+    <g data-name="사각형 352970" transform="translate(9 41)" style="stroke:#191919;fill:none">
+        <rect width="6" height="2" rx="1" style="stroke:none"/>
+        <rect x=".5" y=".5" width="5" height="1" rx=".5" style="fill:none"/>
+    </g>
+    <g data-name="타원 8802" transform="translate(23 19)" style="stroke:#191919;fill:none;stroke-width:2px">
+        <circle cx="10.5" cy="10.5" r="10.5" style="stroke:none"/>
+        <circle cx="10.5" cy="10.5" r="9.5" style="fill:none"/>
+    </g>
+    <text data-name="U" transform="translate(28 35)" style="fill:#191919;font-size:15px;font-family:Pretendard-Bold,Pretendard;font-weight:700;letter-spacing:-.02em"><tspan x="0" y="0">U</tspan></text>
+</svg>

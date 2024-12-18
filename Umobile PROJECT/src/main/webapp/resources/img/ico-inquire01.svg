@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g data-name="그룹 493395">
+        <g data-name="그룹 465504">
+            <path data-name="합치기 39" d="M14 41A14 14 0 0 1 0 27v-6.908a14 14 0 0 1 14-14h18.993a14.088 14.088 0 0 1 2.492.221l6.86-5.672a2.757 2.757 0 0 1 4.532 1.887l.1 16.977q.012.292.012.586V21.5L47 22.689q0 .1-.007.192V27a14 14 0 0 1-14 14z" transform="rotate(180 27 25.5)" style="fill:#eff1f5;stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+            <g data-name="그룹 493393" transform="translate(6.749 9.25)">
+                <circle data-name="타원 8768" cx="2.5" cy="2.5" r="2.5" transform="translate(31.25 15.75)" style="fill:#191919"/>
+                <circle data-name="타원 8767" cx="2.5" cy="2.5" r="2.5" transform="translate(21.25 15.75)" style="fill:#191919"/>
+                <circle data-name="타원 8746" cx="2.5" cy="2.5" r="2.5" transform="translate(11.25 15.75)" style="fill:#191919"/>
+            </g>
+        </g>
+    </g>
+</svg>

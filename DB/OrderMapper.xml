@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.OrderMapper">
+
+	<!-- 주문내역 저장 -->
+	<insert id="orderInsert"
+		parameterType="org.zerock.domain.OrderVO">
+		INSERT INTO phoneadd(VNO, UNO, CNO, COLOR, INSTALLMENT,
+		VATPRICE)
+		values(SEQ_PHONEADD.nextval, #{uno}, #{cno}, #{color} ,
+		#{installment}, #{vatPrice})
+	</insert>
+
+	<!-- 한 사람의 주문내역 조회 (상품 신청 내역) -->
+	<select id="orderRead" resultType="org.zerock.domain.OrderVO">
+		select a.UNO, a.VNO, a.CNO, b.phone_name, b.giga , a.COLOR,
+		a.INSTALLMENT , a.VATPRICE , a.REGDATE
+		from phoneadd a join phonepro b on a.cno = b.cno
+		where a.uno = #{uno}
+	</select>
+	
+	<!-- 회원 가입신청 취소처리 -->
+	<delete id="cancel">
+		delete from phoneadd
+		where vno = #{vno}
+	</delete>
+	
+	<!-- 상품신청내역(관리자) -->
+	<select id="orderList" resultType="org.zerock.domain.OrderVO">
+		select a.vno, a.uno, a.cno ,b.email, b.name, b.PHONE, c.phone_name, c.serial , c.price , a.COLOR,
+		a.INSTALLMENT , a.VATPRICE , a.REGDATE
+		from phoneadd a
+		join users b on a.uno = b.uno
+		join phonepro c on a.cno = c.cno
+	</select>
+	
+	<!-- 최근 신청내역(관리자메인) -->
+	<select id="fetchRecentOrders" parameterType="int" resultType="org.zerock.domain.OrderVO">
+        select a.vno, a.uno, a.cno ,b.email, b.name, b.PHONE, c.phone_name, c.giga , c.price , a.COLOR,
+		a.INSTALLMENT , a.VATPRICE , a.REGDATE
+		from phoneadd a
+		join users b on a.uno = b.uno
+		join phonepro c on a.cno = c.cno
+        ORDER BY regdate DESC
+        FETCH FIRST #{limit} ROWS ONLY
+    </select>
+
+
+</mapper>

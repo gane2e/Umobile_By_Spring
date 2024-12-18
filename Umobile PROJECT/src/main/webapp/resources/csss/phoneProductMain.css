@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+* {
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.accession {
+	width: 1200px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	left: -390px;
+}
+
+.accession>h1 {
+	color: #191919;
+	font-size: 36px;
+	font-weight: bold;
+	position: relative;
+	top: 50px;
+}
+
+/*  추천 받기 */
+.unit-origin {
+	width: 1700px;
+	height: 300px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box-filter-wrap {
+	width: 100%;
+	height: 100%;
+}
+
+.box-filter {
+	width: 100%;
+	height: 95px;
+}
+
+.border-gy {
+	border: 1px solid #ddd;
+	border-radius: 7px;
+	padding: 25px 0;
+	width: 49%;
+	color: #191919;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -.3px;
+	justify-content: center;
+	background-color: white;
+}
+
+.border-gy:hover {
+	background-color: white;
+}
+
+.accordian-search.on {
+	background: #fafafa;
+	height: 90px;
+	border-radius: 7px 7px 0 0;
+	border-bottom: none;
+}
+
+.accordian-search-result {
+	width: 1587px;
+	height: 120px;
+	border: 1px solid #ddd;
+	border-radius: 0 0 7px 7px;
+	background: #fafafa;
+	padding: 40px;
+	position: relative;
+	top: -5px;
+}
+/*  추천 받기 끝 */
+.accordian-search-result>.bulkhead>li {
+	flex: 1;
+	float: left;
+	margin-right: 50px;
+}
+
+.main-txt {
+	color: #191919;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -.4px;
+	margin-bottom: 25px;
+}
+
+.box-btn {
+	display: flex;
+	gap: 30px;
+}
+
+.btn-check {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+.btn-check label {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	color: #666;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -.3px;
+	color: #191919;
+}
+
+.btn-check label .ico-check {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	padding-left: 30px;
+	position: relative;
+	transition: all .3s ease-out;
+}
+
+.btn-check label .ico-check::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #ddd;
+	border-radius: 50%;
+	transition: background-color 0.3s; /* 부드러운 전환 효과 */
+}
+
+.btn-check label .ico-check.active::before {
+	background-color: purple; /* 보라색으로 변경 */
+}
+
+.btn-check label .ico-check::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 4px;
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background-image: url(/resources/img/ico-check-on.svg);
+	background-size: contain;
+}
+
+.box-btn {
+	display: flex;
+	gap: 30px;
+}
+
+.btn-text-right {
+	padding-right: 25px;
+	background-image: url(/resources/img/ghk.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+	background-position: right center; /* 화살표를 오른쪽 가운데에 배치 */
+	display: inline-block;
+}
+
+/*  상품 리스트  */
+.intro-list-wrap {
+	width: 1700px;
+	height: 1900px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro-list-wrap .link_group {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.intro-list-wrap .link_group li.on a {
+	color: #191919;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -.3px;
+}
+
+.intro-list-wrap .link_group li a {
+	color: #666;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -.3px;
+}
+
+.intro-list-wrap .link_group li a {
+	color: #666;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -.3px;
+}
+
+/* 핸드폰 상품 리스트  */
+.listWrap {
+	width: 100%;
+	height: 100%;
+}
+
+.card-group {
+	display: grid;
+	gap: 120px 0;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-group li {
+	width: 510px;
+	height: 775px;
+	background-color: skyblue;
+}
+
+.card-group li>a:hover {
+	border: 1px solid #662d91;
+}
+
+.card-group li a {
+	position: relative;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 7px;
+	padding: 40px;
+	text-align: center;
+	display: block;
+	height: 100%;
+}
+
+.chip-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0 5px;
+	flex-wrap: wrap;
+}
+
+.chip-wrap>img {
+	height: 26px;
+	display: block;
+}
+
+.phone-img {
+	width: 400px;
+	margin-top: 30px;
+	height: 430px;
+}
+
+.phone-img>img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.phone-cont {
+	width: 400px;
+	height: 200px;
+}
+
+.phone-cont-top {
+	margin-top: 20px;
+}
+
+.phone-cont-top .main-txt {
+	margin-bottom: 20px;
+	min-height: 48px;
+	font-size: 26px;
+}
+
+.chip {
+	display: inline-block;
+	width: 50px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.chip>img {
+	width: 100%;
+	display: inline-block;
+}
+
+.phone-cont-top>p {
+	color: #666;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -.3px;
+}
+
+.phone-cont>.phone-cont-bottom {
+	border-top: 1px solid #ddd;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+.normal-txt {
+	color: #191919;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -.3px;
+}
+
+.normal-txt .txt-vt {
+	position: relative;
+	font-size: 34px;
+	margin-left: 10px;
+}
+
+.txt-vt .dc-prc {
+	position: absolute;
+	right: 0;
+	top: -30px;
+	min-width: 300px;
+	text-align: right;
+	color: #666;
+	font-size: 26px;
+	text-decoration: line-through;
+	letter-spacing: -.32px;
+}
+
+.txt-vt {
+	color: #662d91 !important;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+/* 핸드폰 상품 리스트  끝 */

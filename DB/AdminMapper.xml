@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.AdminMapper">
+
+	<!-- 로그인 정보 읽기 -->
+	<select id="read" resultType="org.zerock.domain.AdminVO">
+		SELECT ANO ,USERNAME , PASSWORD ,
+		NAME
+		FROM ADMIN
+		WHERE USERNAME=#{username}
+	</select>
+
+	<!-- 회원 목록 조회 -->
+	<select id="memberList" resultType="org.zerock.domain.UserVO">
+		SELECT UNO, EMAIL, NAME,
+		PHONE, ADDR, REGDATE
+		FROM USERS
+	</select>
+
+	<!-- 관리자 목록 조회 -->
+	<select id="adminList" resultType="org.zerock.domain.AdminVO">
+		SELECT ANO, USERNAME, NAME
+		FROM ADMIN
+	</select>
+
+</mapper>

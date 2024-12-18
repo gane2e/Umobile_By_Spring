@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="org.zerock.mapper.UserMapper">
+
+    <!-- 회원가입 처리 -->
+    <insert id="insertUser">
+        INSERT INTO USERS (UNO, EMAIL, NAME, PASSWORD, PHONE, ADDR)
+        VALUES (SEQ_USERS.nextval, #{email}, #{name}, #{password}, #{phone}, #{addr})
+    </insert>
+
+    <!-- 로그인 정보 읽기 -->
+    <select id="login" parameterType="map" resultType="org.zerock.domain.UserVO">
+        SELECT UNO, EMAIL, NAME, PASSWORD, PHONE, ADDR, regdate
+        FROM USERS
+        WHERE EMAIL=#{username}
+    </select>
+
+    <!-- ID 중복 체크 -->
+    <select id="checkEmail" resultType="int">
+        SELECT COUNT(*)
+        FROM USERS
+        WHERE EMAIL = #{email}
+    </select>
+
+    <!-- 회원정보 수정 (비밀번호 미포함) -->
+    <update id="updateUser">
+        UPDATE USERS
+        SET
+            NAME = #{name},
+            ADDR = #{addr},
+            PHONE = #{phone}
+        WHERE UNO = #{uno}
+    </update>
+
+    <!-- 회원정보 수정 (비밀번호 포함) -->
+    <update id="updateUserPw">
+        UPDATE USERS
+        SET
+            NAME = #{name},
+            PASSWORD = #{password},
+            ADDR = #{addr},
+            PHONE = #{phone}
+        WHERE UNO = #{uno}
+    </update>
+
+    <!-- 회원탈퇴 처리 -->
+    <delete id="deleteUser">
+        DELETE FROM USERS
+        WHERE UNO = #{uno}
+    </delete>
+
+</mapper>

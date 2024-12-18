@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.NoticeMapper">
+
+	  <!-- 공지사항 등록 -->
+    <insert id="create">
+        INSERT INTO notice (nno, title, content, writer, regdate)
+        VALUES (SEQ_NOTICE.NEXTVAL, #{title}, #{content}, #{writer}, SYSTIMESTAMP)
+    </insert>
+
+    <!-- 공지사항 조회 -->
+    <select id="read" resultType="org.zerock.domain.NoticeVO">
+        SELECT * FROM notice WHERE nno = #{nno}
+    </select>
+
+    <!-- 공지사항 수정 -->
+    <update id="update">
+        UPDATE notice
+        SET title = #{title}, 
+            content = #{content}, 
+            modifieddate = SYSTIMESTAMP
+        WHERE nno = #{nno}
+    </update>
+
+    <!-- 공지사항 삭제 -->
+    <delete id="delete">
+        DELETE FROM notice WHERE nno = #{nno}
+    </delete>
+
+    <!-- 검색 기능 -->
+    <select id="searchPosts" resultType="org.zerock.domain.NoticeVO">
+        SELECT * FROM notice
+        WHERE title LIKE '%' || #{keyword} || '%'
+           OR content LIKE '%' || #{keyword} || '%'
+        ORDER BY regdate DESC
+        OFFSET #{offset} ROWS FETCH NEXT #{limit} ROWS ONLY
+    </select>
+    
+	<!-- 검색된 공지사항 개수 -->
+	<select id="countSearchPosts" resultType="int">
+    SELECT COUNT(*)
+    FROM notice
+    WHERE title LIKE '%' || #{keyword} || '%'
+       OR content LIKE '%' || #{keyword} || '%'
+	</select>
+
+    <!-- 페이징 처리된 공지사항 조회 -->
+    <select id="getAllWithPaging" resultType="org.zerock.domain.NoticeVO">
+        SELECT nno, title, writer, regdate 
+        FROM notice 
+        ORDER BY nno DESC 
+        OFFSET #{offset} ROWS FETCH NEXT #{limit} ROWS ONLY
+    </select>
+
+    <!-- 공지사항 총 개수 가져오기 -->
+    <select id="getTotalCount" resultType="int">
+        SELECT COUNT(*) FROM notice
+    </select>
+	
+	<select id="countAllPosts" resultType="int">
+    	SELECT COUNT(*)
+    	FROM notice
+	</select>
+	
+    <!-- 최근 공지사항 가져오기 -->
+    <select id="fetchRecentNotices" parameterType="int" resultType="org.zerock.domain.NoticeVO">
+        SELECT nno, title, writer, regdate
+        FROM notice
+        ORDER BY regdate DESC
+        FETCH FIRST #{limit} ROWS ONLY
+    </select>
+
+</mapper>

@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+
+.pt_cart{
+	width: 100%;
+	height: 800px;
+	margin-top: 150px;
+	
+}
+
+.pt_cart > .contents {
+    margin: 80px 0 50px;
+    
+}
+
+.cart-wrap {
+    max-width: 1580px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cart-wrap .cart-top {
+    max-width: 100%;
+    height:100%;
+    margin-bottom: 100px;
+}
+
+.flex-no-gutters {
+    width:100%;
+    height: 100%;
+}
+
+.cart-group-list {
+  width: 100%;
+  height: 100% 
+    }
+    
+.title {
+   padding-bottom: 40px;
+  }
+  
+ .title {
+        font-size: 26px;
+        color: #000000;
+        font-weight: bold;
+        letter-spacing: -.025em;
+    }
+    
+    
+ .cart-list{
+ max-width: 100%;
+ height: 420px;
+ }   
+  
+  
+.list-sort-name {
+    height: 70px;
+    text-align: center;
+    border-top: 3px solid #141414;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.col-md-7{
+	width: 700px;
+	height: 40px;
+	margin-top: 20px
+}
+
+.cart-list .list-sort-name > div {
+    font-size: 16px;
+}
+
+.col-md-7 > .flex-no-gutters{
+	width: 100%;
+	height: 100%;
+}
+
+ .checked-item-btn {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    background: #141414;
+    margin-right: 15px;
+    position: relative;
+    left: -320px;
+}
+
+.check_wrap{
+	width: 26px;
+}
+
+input#check_btn{
+  display:none;
+  }
+
+input#check_btn + label{
+  cursor:pointer;
+ }
+
+input#check_btn + label > span{
+  vertical-align: middle;
+  padding-left: 5px;
+ }
+
+/* label:before에 체크하기 전 상태 CSS */
+input#check_btn + label:before{
+  content:"";
+  display:inline-block;
+  width:27px;
+  height:27px;
+  border:2px solid #F47C7C;
+  border-radius: 4px;
+  vertical-align:middle;
+  }
+  
+/* label:before에 체크 된 상태 CSS */  
+input#check_btn:checked + label:before{
+  content:"";
+  background-color:#F47C7C;
+  border-color:#F47C7C;
+  background-image: url('check_btn.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  }
+
+.col{
+	font-size :20px;
+	    position: relative;
+}
+
+.col-md-3{
+	font-size :20px;
+	    position: relative;
+    top: -40px;
+}
+.col-md-2{
+	width :50px;
+	font-size :20px;
+	    position: relative;
+    top: -40px;
+    float: right;
+}
+
+.cart-list .cart-list-item {
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+
+.cart-list .cart-list-item .item-dec {
+  width : 700px;
+  height :100px;
+  padding: 10px 0;
+}
+
+.flex-align-start{
+	width: 700px;
+	height: 100px;
+}
+
+.item-detail {
+    width: 700px;
+    height: 100px;
+    position: relative;
+    top: -30px;
+    left: 32px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    word-break: keep-all;
+    position: relative;
+    left: 70px;
+}
+
+.item-price {
+    border-left: 1px solid #e0e0e0;
+    width: 600px;
+    height: 93px;
+    position: relative;
+    top: -140px;
+    left: 690px;
+}
+
+.serialnumber{
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+    
+.item-price {
+    padding: 0 30px;
+}
+
+
+.bottom-layer-pop {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    width: 100%;
+    height:200px;
+    background-color: #fff;
+    border-top: 1px solid #662d91;
+}
+
+
+.bottom-container {
+    max-width: 1500px;
+    height:200px;
+    margin: 0 auto;
+}
+
+ .show-conts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 40px;
+}   
+  
+ .selectbox{
+ width: 500px;
+ height: 180px;
+ background-color:#eff1f0; 
+ }   
+ 
+ .btns{
+    color: #191919;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    color: #fff;
+    width: 370px;
+    height: 80px;
+    background: #662d91;
+    padding: 20px 0;
+    border-radius: 7px;
+    text-align: center;
+ }
+ 
+ 
+.selected-item{
+	font-size: 23px;
+}
+ 
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* 테이블 스타일 */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.comparison-table td {
+    background-color: #fff;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 닫기 버튼 */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 비교 항목 스타일 */
+.comparison-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}

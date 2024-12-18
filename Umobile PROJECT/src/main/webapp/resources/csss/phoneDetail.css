@@ -1,0 +1,1264 @@
+@charset "UTF-8";
+
+*{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.sub-conts {
+    width: 1600px;
+    height: 3000px;
+    margin: 0 auto;
+    margin-top : 50px;
+}
+
+.product-info .box-phone-info {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+/* 상품이미지 시작  */
+
+.box-phone-info .phone-thumb {
+    width: 700px;
+    height: 890px;
+}
+
+
+.big-thumb-wrap {
+    width: 650px;
+    height: 600px;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.big-thumb-slide{
+	width: 100%;
+	height: 100%;
+}
+
+.slick-list{
+	width: 100%;
+    height: 100%;
+}
+
+.slick-track{
+	width: 100%;
+	height: 100%;
+}
+
+.slick-slide{
+	width: 100%;
+	height: 100%;
+}
+
+.slick-slide > img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 상품이미지 끝  */
+
+/* 작은 핸드폰 이미지 시작 */
+.big-thumb-wrap+div {
+    height: 150px;
+    overflow: hidden;
+    margin-top: 30px;
+    position: relative;
+    left: -70px;
+}
+
+.phone-thumb .thumb-slide .slick-list {
+    display: block;
+    margin: 0 40px;
+     display: flex;
+    justify-content: center;  /* 수평 가운데 정렬 */
+    align-items: center;
+    padding: 10px;
+}
+
+
+.slick-trackl{
+	opacity: 1;
+	width: 110px;
+	height:105px;
+	transform: translate3d(0px, 0px, 0px); 
+	border: 2px solid black;
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;  
+}
+
+.slick-trackl > img{
+	width: 100%;
+	height: 100%;
+	pa
+}
+
+/* 작은 핸드폰 이미지 끝 */
+
+
+.box-phone-info .phone-detail {
+    width: 810px;
+    height: 1000px;
+}
+
+.detail-top .box-name .product-name {
+    display: flex;
+    gap: 10px;
+}
+
+.box-name >.product-name>span {
+    color: #191919;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -.7px;
+}
+
+.box-name .product-name .chip-wrap {
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.btn-share {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    text-indent: -99999px;
+    background-image: url(/resources/img/ico-share.svg);
+    background-size: contain;
+    float: right;
+    position: relative;
+    top: -45px;
+}
+
+.detail-top .box-detail {
+    display: flex;
+    margin-top: 10px;
+ }
+
+.box-detail li {
+    position: relative;
+}
+
+.box-detail li+li {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+ .box-detail li+li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+
+
+.phone-detail .detail-bottom {
+    margin-top: 70px;
+    height: 500px;
+    
+}
+
+.detail-title {
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #191919;
+    color: #191919;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.4px;
+}
+
+.phone-type-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phone-type-form dt {
+    width: 130px;
+    font-size: 20px;
+    color: #666;
+    letter-spacing: -.4px;
+    font-weight: 400;
+}
+
+.box-pick-color {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.color-type {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.color-type li input[type=radio] {
+    display: none !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.color-type li label, .color-type li span {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e4f7ff;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.btn-mark {
+    position: relative;
+    left: 340px;
+}
+
+.box-color-name strong {
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+}
+
+.phone-type-form dt {
+    width: 130px;
+    font-size: 20px;
+    color: #666;
+    letter-spacing: -.4px;
+    font-weight: 400;
+}
+
+.installment-section {
+    margin-top: 10px;
+}
+
+.phone-type-form1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phone-type-form1 dt {
+    width: 130px;
+    font-size: 20px;
+    color: #666;
+    letter-spacing: -.4px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.phone-type-form1 dd {
+    width: calc(100% - 130px);
+    margin-top: 50px;
+}
+
+.btn-radio-group {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-radio {
+    position: relative;
+}
+
+.btn-radio input[type=radio] {
+    display: none !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.btn-radio label {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.btn-radio input[type=radio]:checked + label {
+    border: 2px solid #662d91;
+    box-shadow: 0 0 8px rgba(102, 45, 145, 0.3); /* 선택 시 약간의 강조 효과 */
+}
+
+.radio-list+.box-btn {
+    margin-top: 20px;
+}
+
+.btn-text-right-s {
+    padding-right: 22px;
+    color: #191919;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    background: ;
+    background-size: 15px 15px;
+    display: inline-block;
+}
+
+.banner-slid{
+	width: 100%;
+    height: 300px;
+    margin-top: 50px;
+} 
+
+.banner-slid > a > img{
+	width: 100%;
+	height: 100%
+}
+
+.box-tab02 {
+    overflow: visible;
+    margin-top: 110px;
+    width: 100%;
+    height: 400px;
+    
+}
+
+.box-tab02>.tab-contents-wrap{
+	width: 100%;
+	height: 100%;
+}
+
+.tab-contents-wrap > .box-phone-rate{
+	width: 100%;
+	height: 100%;
+}
+
+.detail-title {
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #191919;
+    color: #191919;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.4px;
+}
+
+.box-btn {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.btn-text-right{
+	padding-right: 25px;
+    background: ;
+    background-size: 20px 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+
+.box-phone-rate .card-rate-wrap {
+    display: flex;
+    gap: 30px;
+}
+
+.box-phone-rate .payment-imgCard-btn {
+    position: relative;
+    flex: 1;
+    max-width: 490px;
+    height : 400px;
+    margin: 0;
+}
+
+.payment-imgCard-btn .cardList {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    width: 300;
+      padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.cardList .item-top {
+    display: block;
+    padding-bottom: 0;
+}
+
+.payment-imgCard-btn .chip-wrap {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    margin: 0;
+    
+}
+
+.chip-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    flex-wrap: wrap;
+}
+
+
+.chip-wrap > a>  img {
+    height: 20px;
+    display: block;
+}
+
+.item-top .payment-desc {
+    display: block;
+    width: 100%;
+}
+
+.payment-desc dt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.payment-imgCard-btn .title {
+    color: #191919;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.4px;
+}
+
+.payment-desc dd {
+    position: relative;
+    width: 100%;
+    padding: 0 300px 0 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 6px 0;
+}
+
+.feature>span {
+    position: relative;
+    margin-right: 10px;
+    padding-left: 25px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -.3px;
+    white-space: nowrap;
+}
+
+.feature>span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 100%;
+}
+
+a {
+     font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+    cursor: pointer;
+}
+
+
+.feature> .vol::before {
+    background-image: url(/resources/img/ico-data.svg);
+    background-size: auto 16px;
+}
+
+.feature>.limit::before {
+    background: url(/resources/img/ico-call-fill.svg)center;
+    background-size: auto 24px;
+}
+
+.feature>.supply::before {
+    background: url(/resources/img/ico-sms-fill.svg) no-repeat center center;
+    background-size: auto 24px;
+}
+
+.pay-amount {
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.pay-amount .origin-pay {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -.3px;
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.pay-amount .discount-pay {
+    color: #191919;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.4px;
+    color: #662d91;
+    font-weight: 700;
+}
+
+ .cardList>input[type=radio] {
+    display: none !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.cardList>input[type=radio]:checked+label {
+    border-color: #662d91;
+}
+
+/* 할인 유형 시작 */
+
+ .phone-type-form {
+    margin-top: 50px;
+}
+
+.radio-group-wrap .btn-radio-group {
+    gap: 30px;
+}
+
+.btn-radio-group .btn-radio1 {
+    flex: 1;
+}
+
+.phone-type-form > .dd {
+    width: calc(100% - 130px);
+
+}
+
+.btn-radio1 {
+    position: relative;
+    width: auto;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.btn-radio1 > .label {
+    width: 100% ; 
+    justify-content: space-between;
+}
+
+
+
+.btn-radio1 input[type=radio] {
+    display: none !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.btn-radio1 input[type=radio]:checked+.label {
+    border: 1px solid #662d91;
+    color: #662d91;
+    transition: all .3s ease-out;
+    background: #fff;
+    display: inline-block;
+    width: 590px;
+    height: 60px;
+}
+
+.btn-radio1 > .label {
+    text-align: center; 
+}
+
+.btn-radio1 > .label {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -.3px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 58px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    background: #fff;
+    min-width: 120px;
+}
+
+.btn-radio1 > .label > strong {
+    color: #191919;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    position: relative;
+    top: 16px;
+}
+
+.btn-radio1 > label > strong > span {
+    color: #191919;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.btn-radio1 > .label > .txt-vt {
+    color: #191919;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    position: relative;
+    top: 16px;
+}
+
+.txt-vt {
+    color: #662d91 !important;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: center; 
+}
+
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.ucash-tit {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    letter-spacing: -.4px;
+    color: #666;
+        margin-top: 40px;
+}
+
+.tooltip-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.box-tooltip {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btn-tooltip {
+    width: 25px;
+    height: 25px;
+    background: url(/resources/img/ico-tip.svg) no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.txt{
+	font-size: 17px;
+}
+
+.phone-type-form  > .ucashArea {
+    width: calc(89% - 3px);
+    margin-top: 50px;
+}
+
+
+.ucashArea  >.txt-box {
+    height: 40px;
+    padding: 25px 0 26px 40px;
+    border-radius: 10px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+        position: relative;
+    top: -120px;
+    left: 130px;
+}
+
+.txt-box p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.32px;
+    text-align: left;
+    color: #191919;
+}
+ .txt-box p strong {
+    color: #662d91;
+    font-size: 16px;
+    font-weight: 600;
+}
+.phone-type-form2 {
+    margin-top: -50px;
+}
+
+.phone-type-form2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phone-type-form2 > dt {
+    width: 130px;
+    font-size: 20px;
+    color: #666;
+    letter-spacing: -.4px;
+    font-weight: 400;
+}
+
+.phone-type-form2 dd {
+    width: calc(100% - 130px);
+}
+
+.box-gift {
+    display: flex;
+    gap: 10px;
+}
+
+.box-btn .speech-bubble {
+    width: 338px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #959595;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -.3px;
+    color: #fff;
+    line-height: 40px;
+    background: url(/resources/img/speech-bubble.png) no-repeat center;
+    background-size: contain;
+}
+
+.btn-text-right {
+    padding-right: 25px;
+    background: url(/resources/img/ico-arrow-right.svg) no-repeat right;
+    background-size: 20px 20px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    
+}
+
+
+ .btn-text-right:active {
+            background-color: inherit;
+        }
+        
+
+
+
+/* 할인 유형 끝 */
+
+
+
+/* 하단 시작  */
+
+.box-tab {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    top: 450px;
+}
+
+.tab-btn-wrap {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+    justify-content: center;
+}
+
+.tab-btn-wrap li {
+    margin-right: 20px;
+}
+
+.tab-btn-wrap li a {
+    display: block;
+    padding: 15px 30px; 
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px; 
+    line-height: 1.5; 
+}
+
+.tab-btn-wrap li a.on {
+    color: #6c44b1;
+    border-bottom: 3px solid #6c44b1; /* 강조 스타일 조정 */
+}
+
+.tab-btn-wrap li a:hover {
+    color: #6c44b1;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: none; 
+}
+
+.tab-content.active {
+    display: block; 
+}
+
+
+/* 하단 끝  */
+
+/*  상테 스택 */
+.product-view{
+	width: 100%;
+	height: 800px;
+	margin-top: 30px; 
+}
+
+.aria{
+	width: 100%;
+	height: 500px;
+}
+
+
+.box-table > .table-type-04 {
+    border-top: 1px solid #ddd;
+}
+
+.hiddden {
+    display: none !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+
+.table-type-04 {
+    border-collapse: collapse; 
+    width: 100%;
+    
+}
+
+/* tbody 스타일 */
+.tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+/* tr 스타일 */
+.tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+
+/* th, td 스타일 */
+th, td {
+    border: 1px solid #ddd; 
+     padding: 16px 20px;
+    padding: 8px; 
+    color: #666;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+/* th 스타일 */
+th {
+    background-color: #f2f2f2; 
+    text-align: left; 
+}
+
+
+.tr:nth-child(even) {
+     
+}
+.tr:nth-child(odd) {
+    
+}
+
+ .table-type-04 th {
+    background-color: #eff1f5;
+    padding: 20px 0;
+    text-align: center;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    vertical-align: middle;
+}
+
+.table-type-04 > td {
+    padding-left: 30px;
+    text-align: left;
+    color: #666;
+    font-size: 16px;
+}
+
+/*  상테 스택 */
+
+/*  리 뷰  */
+.review_list_wrap{
+	width: 1600px;
+	height: 2000px;
+	position: relative;
+	z-index: 2px;
+}
+
+.inner_list{
+	width: 100%;
+	height: 100%
+}
+.review_list_wrap .inner_list>li {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    height: 300px;
+}
+
+.inner_list>li>.infol {
+    float: left;
+    width: 450px;
+    height: 100px;
+    padding: 30px 0;
+}
+
+.infol  >.user {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ .id {
+    width: 100%;
+overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 19px;
+    color: #131518;
+    padding: 10px;
+}
+
+li>.review_cont {
+    position: relative;
+    margin-left: 255px;
+    padding: 30px 0;
+    height: 230px;
+}
+
+.score_area {
+    min-height: 60px;
+    margin-bottom: 14px;
+}
+
+.review_title {
+    float: left;
+    width: 392px;
+    height: 39px;
+        position: relative;
+    left: 15px;
+}
+
+.point{
+font-size: 26px;	
+font-weight: 600px;
+	
+}
+
+.score_area .reg-date {
+    margin-left: 15px;
+    font-size: 27px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+.item_option {
+    color: #888;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 1.5;
+    position: relative;
+    left: 10px;
+}
+
+.txt_inner {
+    color: #555;
+    line-height: 24px;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 500px;
+    position: relative;
+    left: 210px;
+}
+
+
+/*  리 뷰  */
+.bottom-layer-pop {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    width: 100%;
+    height:200px;
+    background-color: #fff;
+    border-top: 1px solid #662d91;
+}
+
+.bottom-layer-pop .bottom-pop-btn {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 20px;
+    background-color: #fff;
+    border-top: 1px solid #662d91;
+    border-left: 1px solid #662d91;
+    border-right: 1px solid #662d91;
+    border-radius: 20px 20px 0 0;
+}
+
+.bottom-pop-btn .ico-pop-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    text-indent: -9999px;
+    transform: translateX(-50%) rotate(180deg);
+    transition: transform .3s;
+    background: url(/resourcess/img/ico-arrow-purple-type2.svg) no-repeat center;
+    background-size: contain;
+}
+
+.bottom-container {
+    width: 1280px;
+    height:100%;
+    margin: 0 auto;
+}
+
+.show-conts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 40px;
+}
+
+.show-conts .price-conts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.price-conts.sello-prc {
+    width: auto;
+}
+
+ .price-conts .price {
+    color: #191919;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.4px;
+}
+
+.price .txt-tv {
+    display: inline-block;
+    margin-left: 10px;
+    color: #191919;
+    font-size: 36px; /* 글자 크기 직접 지정 */
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    color: #662d91;
+}
+
+.btn-conts {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+.ripper-area {
+    position: relative;
+}
+
+ .ripper-area .sello-bubble {
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    min-width: 190px;
+    transform: translateX(-50%);
+    padding: 8px 3px;
+    align-items: center;
+    border-radius: 8px;
+    background: #eb068b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: -.32px;
+    box-sizing: border-box;
+    color: #fff;
+    animation: MoveUpDown 3s linear infinite;
+}
+
+.sello-bubble::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-13%);
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: #eb068b;
+    border-bottom: 0;
+    margin-left: -6px;
+    margin-bottom: -6px;
+}
+
+ .btn-sello {
+    width: 350px;
+    padding: 19px 20px 20px 30px;
+    border: solid 1px #662d91;
+    background: #fff;
+}
+
+.btn-sello:hover{
+	background: none;
+}
+
+.btn-sello > span {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.32px;
+    text-align: left;
+    color: #662d91;
+}
+
+ .btn-sello span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: url(/resources/img/icon-arrow-right-purple.svg) no-repeat 50%;
+}
+
+.btns1 {
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.3px;
+    color: #fff;
+    width: 260px;
+    height: 63px;
+    background: #662d91;
+    padding: 6px 0;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.btns1:hover{
+	background: none;
+} 
+
+.btns1:hover {
+    background: #662d91;
+}

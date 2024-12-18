@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.ProductMapper">
+
+	<!-- 상품리스트 가져오기 / THUMNAIL컬럼 -> IMAGE_PATH로 변경 -->
+	<select id="getProduct" resultType="org.zerock.domain.ProductVO">
+		SELECT
+		CNO, SERIAL, GIGA, PRICE, PHONE_NAME, PHONE_SIZE,
+		PHONE_WEIGHT, CAMERA, BATTERY, MEMORY, STATUS,
+		MANUFACTURER, COLOR, CPU, OPTIONS, RELEASE_DATE,
+		OS, IMAGE_PATH , DESCRIPTION1, DESCRIPTION2, DISPLAY,
+		SECURITY, WATERPROOF, REGDATE
+		from phonepro
+		where cno>0
+	</select>
+
+	<!-- 1개상품정보 읽기 / THUMNAIL컬럼 -> IMAGE_PATH로 변경 -->
+	<select id="read" resultType="org.zerock.domain.ProductVO">
+		SELECT
+		CNO, SERIAL, GIGA, PRICE, PHONE_NAME, PHONE_SIZE,
+		PHONE_WEIGHT, CAMERA, BATTERY, MEMORY, STATUS,
+		MANUFACTURER, COLOR, CPU, OPTIONS, RELEASE_DATE,
+		OS, IMAGE_PATH, DESCRIPTION1, DESCRIPTION2, DISPLAY,
+		SECURITY, WATERPROOF, REGDATE
+		from phonepro
+		where cno=#{cno}
+	</select>
+
+	<!-- 선택된 두 상품 정보 조회 -->
+	<select id="getSelectedProducts"
+		resultType="org.zerock.domain.ProductVO">
+		SELECT *
+		FROM PHONEPRO
+		WHERE CNO IN
+		<foreach item="item" collection="list" open="(" separator=","
+			close=")">
+			#{item}
+		</foreach>
+	</select>
+	
+	<!-- 특정 휴대폰 상세 정보 가져오기 -->
+    <select id="getPhoneDetails" resultType="org.zerock.domain.ProductVO">
+        SELECT 
+            CNO, PHONE_NAME, PRICE, GIGA, BATTERY, CAMERA, DISPLAY, 
+            MANUFACTURER, RELEASE_DATE, OS, COLOR, OPTIONS, 
+            SECURITY, WATERPROOF
+        FROM phonepro
+        WHERE cno = #{vno}
+    </select>
+	
+	<!-- 상품 등록 -->
+	<insert id="insertPhone">
+	INSERT INTO PHONEPRO 
+		     (CNO, SERIAL, GIGA, PRICE, PHONE_NAME, PHONE_SIZE, PHONE_WEIGHT, CAMERA, BATTERY, 
+              MEMORY, STATUS, MANUFACTURER, COLOR, CPU, OPTIONS, RELEASE_DATE, OS, IMAGE_PATH, 
+              DESCRIPTION1, DESCRIPTION2, display, SECURITY, WATERPROOF)
+       VALUES(SEQ_PHONEPRO.nextval, #{serial}, #{giga}, #{price}, #{phone_Name}, #{phone_Size}, #{phone_Weight}, #{camera}, #{battery}, 
+              #{memory}, #{status}, #{manufacturer}, #{color}, #{cpu}, #{options}, #{release_Date}, #{os}, #{image_Path}, 
+              #{description1}, #{description2}, #{display}, #{security}, #{waterproof})
+	</insert>
+
+</mapper>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g data-name="그룹 493399">
+        <g data-name="사각형 348669" transform="translate(10 15)" style="stroke:#191919;stroke-width:2px;fill:none">
+            <rect width="40" height="36" rx="10" style="stroke:none"/>
+            <rect x="1" y="1" width="38" height="34" rx="9" style="fill:none"/>
+        </g>
+        <path data-name="패스 62" d="M5 30.109c-1.657 0-3-2.463-3-5.5s1.343-5.5 3-5.5" transform="translate(5 8.391)" style="stroke-linejoin:round;stroke:#191919;stroke-width:2px;fill:none"/>
+        <path data-name="패스 63" d="M42 19.109c1.657 0 3 2.463 3 5.5s-1.343 5.5-3 5.5" transform="translate(8 8.391)" style="stroke-linejoin:round;stroke:#191919;stroke-width:2px;fill:none"/>
+        <path data-name="패스 64" d="M16.205 21.109a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0-2.5-2.5" transform="translate(6.295 9.891)" style="fill:#191919"/>
+        <path data-name="패스 65" d="M30.8 21.109a2.5 2.5 0 1 0 2.5 2.5 2.5 2.5 0 0 0-2.5-2.5" transform="translate(6.705 9.891)" style="fill:#191919"/>
+        <path data-name="선 6" transform="translate(30 10)" style="stroke-linejoin:round;stroke:#191919;stroke-width:2px;fill:none" d="M0 0v5"/>
+        <path data-name="선 7" transform="translate(25 10)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#191919;stroke-width:2px;fill:none" d="M0 0h10"/>
+        <g>
+            <g data-name="사각형 120" transform="translate(33 13)" style="fill:#eff1f5;stroke:#191919;stroke-width:2px">
+                <rect width="22" height="12" rx="6" style="stroke:none"/>
+                <rect x="1" y="1" width="20" height="10" rx="5" style="fill:none"/>
+            </g>
+            <g data-name="그룹 39" transform="translate(-1060.182 16.75)">
+                <circle data-name="타원 8800" cx="1.5" cy="1.5" r="1.5" transform="translate(1102.682 .75)" style="fill:#191919"/>
+                <circle data-name="타원 10" cx="1.5" cy="1.5" r="1.5" transform="translate(1097.682 .75)" style="fill:#191919"/>
+                <circle data-name="타원 8801" cx="1.5" cy="1.5" r="1.5" transform="translate(1107.682 .75)" style="fill:#191919"/>
+            </g>
+        </g>
+    </g>
+</svg>
