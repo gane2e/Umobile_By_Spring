@@ -1,7 +1,7 @@
 ## 🔖 목차
 1. [🚩 프로젝트 소개](#프로젝트-소개)
 2. [🙋‍♀️ 프로젝트 참여자](#프로젝트-참여자)
-3. [🛠 개발환경](#개발환경)
+3. [📚 STACKS](#stacks)
 4. [📷 프로젝트 보고서](#프로젝트-보고서)
 
 ## 🚩프로젝트 소개
@@ -21,15 +21,32 @@
 |회원가입, 로그인,  <br />휴대폰 가입신청, 신청내역 개발|공지사항 등록/수정/삭제/조회, <br /> 리뷰등록 개발|view화면 작업|
 
 
-## 🛠개발환경
-<img src="https://camo.githubusercontent.com/92b8740de6bc60cb5d5115586a179c73a9938bb4f8947649ee5f232a3f339ecc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d3030373339363f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661266c6f676f436f6c6f723d7768697465" width="70px">
+## 📚STACKS
+
+<div> 
+  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+  <br>
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+  <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+  <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"> 
+  <br>
+  <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
+  <img src="https://img.shields.io/badge/jsp-E34F26?style=for-the-badge&logo=jsp&logoColor=white"> 
+
+  <br>
+  <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+</div>
 
 
 ## 프로젝트 보고서
-<details>
-   <summary>프로젝트 보고서</summary>
-
-   <img src="https://github.com/user-attachments/assets/f43cc93a-fbdc-475b-8484-84ed0f96851e" width="400px">
+<img src="https://github.com/user-attachments/assets/f43cc93a-fbdc-475b-8484-84ed0f96851e" width="400px">
 <img src="https://github.com/user-attachments/assets/4991131c-f02e-4e87-8b25-c111dfe73610" width="400px">
 <img src="https://github.com/user-attachments/assets/1e4ac332-39e8-4d88-8928-2deb71ae9e41" width="400px">
 <img src="https://github.com/user-attachments/assets/5649394c-f52d-4d84-b4d6-cbdaf346e6f0" width="400px">
@@ -83,20 +100,21 @@
 <img src="https://github.com/user-attachments/assets/34f9f330-ebed-4ec4-8a5d-8410fdf07682" width="400px">
 <img src="https://github.com/user-attachments/assets/9d56137a-95b8-4acd-8660-a3a19dc8987d" width="400px">
 
-</details>
 
 ## 📑다이어그램
 <details>
    <summary>ER다이어그램</summary>
-   <img src="" width="800px"></br>
+   <img src="https://github.com/user-attachments/assets/4b7c2c49-1cc2-49d4-b41c-9df95dc3c910" width="500px"></br>
 </details>
 <details>
    <summary>액티비티 다이어그램</summary>
-   <img src="" width="800px"></br>
+   <img src="https://github.com/user-attachments/assets/d05c8d64-a7b9-42b5-9310-81baf3a737dc" width="500px"></br>
 </details>
 <details>
    <summary>클래스 다이어그램</summary>
-   <img src="" width="800px"></br>
+   <img src="https://github.com/user-attachments/assets/e34c7b8a-d582-420a-912c-c9a3bab99df6" width="400px">
+   <img src="https://github.com/user-attachments/assets/808373ac-d116-4b7c-94c5-129e24732b2b" width="400px">
+   <img src="https://github.com/user-attachments/assets/b9c34b77-d2a3-480e-a4b7-c994f775c39d" width="400px">
+   <img src="https://github.com/user-attachments/assets/eef0f0d2-c9e0-45ce-a25a-121fdf270a19" width="400px">
+   <img src="https://github.com/user-attachments/assets/d1c1475f-2de0-4b9c-9f47-9e86629ab406" width="400px">
 </details>
-
-> 이번 프로젝트를 진행하면서 혼자 개발하는 과정에서 부족한 점도 많았고, 많은 것을 배울 수 있었습니다. <br />
